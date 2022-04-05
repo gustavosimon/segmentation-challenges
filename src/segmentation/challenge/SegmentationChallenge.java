@@ -1,8 +1,11 @@
 package segmentation.challenge;
 
+import segmentation.challenge.window.Menu;
+
 /**
- *
- * @author Gustavo Simon
+ * Trabalho de Processamento Digital de Imagens - Transformações em imagens.
+ * 
+ * @author Felipe Ramon Wozniak, Gustavo André Simon e Pedro Kassick Soares
  */
 public class SegmentationChallenge {
 
@@ -10,7 +13,8 @@ public class SegmentationChallenge {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Menu menu = new Menu();
+        menu.setVisible(true);
     }
     
 }
