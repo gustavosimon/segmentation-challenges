@@ -3,7 +3,7 @@ package segmentation.challenge;
 import segmentation.challenge.window.Menu;
 
 /**
- * Trabalho de Processamento Digital de Imagens - Transformações em imagens.
+ * Trabalho de Processamento Digital de Imagens - Segmentação de imagens.
  * 
  * @author Felipe Ramon Wozniak, Gustavo André Simon e Pedro Kassick Soares
  */
