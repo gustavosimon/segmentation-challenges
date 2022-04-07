@@ -1,16 +1,16 @@
 package segmentation.challenge.utils;
 
-import java.util.Optional;
-
-import javax.imageio.ImageIO;
+import static segmentation.challenge.utils.ImageConstants.*;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.Optional;
+
+import javax.imageio.ImageIO;
 
 import segmentation.challenge.bean.Image;
-
-import static segmentation.challenge.utils.ImageConstants.*;
+import segmentation.challenge.window.Processed;
 
 public class ImageUtils {
     
@@ -58,4 +58,12 @@ public class ImageUtils {
             System.out.println("Falha ao gravar a imagem processada" + e.toString());
         }
     }    
+
+    /**
+     * Exibe a imagem processada em um janela.
+     */
+    public static void showProcessedImage() {
+        Processed p = new Processed(PROCESSED_IMAGE_PATH);
+        p.setVisible(true);
+    }
 }

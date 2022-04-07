@@ -21,6 +21,9 @@ public final class ImageConstants {
     /** Localização da imagem do desafio 1 */
     public static final String CHALLENGE_6_PATH = ROOT_PATH + "challenge-6.png";
 
+    /** Localização da imagem processada pelo desafio */
+    public static final String PROCESSED_IMAGE_PATH = ROOT_PATH + "processed.png";
+    
     /** Extensão da imagem processada */
     public static final String IMAGE_EXTENSION = "png";
 
