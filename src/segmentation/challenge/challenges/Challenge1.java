@@ -3,7 +3,7 @@ package segmentation.challenge.challenges;
 import static segmentation.challenge.utils.ImageConstants.*;
 
 import java.awt.image.BufferedImage;
-import static java.awt.image.BufferedImage.*;
+import static java.awt.image.BufferedImage.TYPE_INT_RGB;
 import java.awt.Color;
 
 import java.util.Optional;
