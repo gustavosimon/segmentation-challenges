@@ -38,28 +38,28 @@ public final class Challenge2 implements Challenge {
         Image image = optImage.get();
         int[][] matrix = image.getMatrix();
         BufferedImage processed = new BufferedImage(image.getWidth(), image.getHeight(), TYPE_INT_RGB);
-        double redSum = 0;
-        double greenSum = 0;
-        double blueSum = 0;
+        int redSum = 0;
+        int greenSum = 0;
+        int blueSum = 0;
         int newRed = 0;
         int newGreen = 0;
         int newBlue = 0;
-        for (int y = 1; y < image.getHeight() - 1; y++) {
-            for (int x = 1; x < image.getWidth() - 1; x++) {
+        for (int x = 1; x < image.getWidth() - 1; x++) {
+            for (int y = 1; y < image.getHeight() - 1; y++) {
                 redSum = 0;
                 greenSum = 0;
                 blueSum =  0;
                 for (int i = 0; i < 3; i++) {
                     for (int j = 0; j < 3; j++) {
                         Color color = new Color(matrix[x + (i - 1)][y + (j - 1)]);
-                        redSum += color.getRed() * mask[i][j];
+                        redSum   += color.getRed()   * mask[i][j];
                         greenSum += color.getGreen() * mask[i][j];
-                        blueSum += color.getBlue() * mask[i][j];
+                        blueSum  += color.getBlue()  * mask[i][j];
                     }
                 }
-                newRed = (int) redSum / 16;
+                newRed   = (int) redSum / 16;
                 newGreen = (int) greenSum / 16;
-                newBlue = (int) blueSum / 16;
+                newBlue  = (int) blueSum / 16;
                 processed.setRGB(x, y, new Color(newRed, newGreen, newBlue).getRGB());
             }
         }

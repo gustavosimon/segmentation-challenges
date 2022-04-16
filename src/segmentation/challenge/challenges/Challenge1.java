@@ -49,7 +49,7 @@ public final class Challenge1 implements Challenge {
                 double blue  = CONTRAST_FACTOR * c.getBlue()  + BRIGHTNESS_FACTOR;
                 blue = blue > 255 ? 255 : blue;
                 blue = blue < 0   ? 0 : blue;
-                processed.setRGB(i, j, new Color((int) red,(int) green,(int) blue).getRGB());
+                processed.setRGB(i, j, new Color((int) red,(int) green, (int) blue).getRGB());
             }
         }
         ImageUtils.writeImage(processed, PROCESSED_IMAGE_PATH);
